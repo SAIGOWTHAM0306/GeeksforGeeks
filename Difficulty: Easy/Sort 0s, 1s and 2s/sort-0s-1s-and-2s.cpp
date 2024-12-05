@@ -8,17 +8,21 @@ class Solution {
   public:
     void sort012(vector<int>& arr) {
         // code here
-        int n = arr.size();
-        int st = 0, mid = 0, end = n-1;
-        while(mid <= end) {
-            if(arr[mid] == 1) {
+        int low=0;
+        int high=arr.size()-1;
+        int mid=0;
+        while(mid<=high){
+            if(arr[mid]==0){
+                swap(arr[mid],arr[low]);
+                low++;
                 mid++;
-            } else if(arr[mid] == 0) {
-                swap(arr[st], arr[mid]);
-                st++, mid++;
-            } else if(arr[mid] == 2) {
-                swap(arr[mid], arr[end]);
-                end--;
+            }
+            else if(arr[mid]==2){
+                swap(arr[mid],arr[high]);
+                high--;
+            }
+            else{
+                mid++;
             }
         }
     }
@@ -50,6 +54,7 @@ int main() {
         }
 
         cout << endl;
+        cout << "~" << endl;
     }
     return 0;
 }
