@@ -1,0 +1,17 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/set-matrix-zeroes/1">Set Matrix Zeroes</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO" style="user-select: auto;"><p style="user-select: auto;"><span style="font-size: 18px; user-select: auto;">You are given a 2D matrix <strong style="user-select: auto;">mat</strong>[][] of size </span><span style="font-size: 18px; user-select: auto;"><strong style="user-select: auto;">n×m</strong>.&nbsp;</span><span style="font-size: 18px; user-select: auto;">The task is to modify the matrix such that if <strong style="user-select: auto;">mat[i][j]</strong> is 0, all the elements in the&nbsp;</span><span style="font-size: 18px; user-select: auto;"><strong style="user-select: auto;">i</strong>-th row and </span><span style="font-size: 18px; user-select: auto;"><strong style="user-select: auto;">j</strong>-th column are set to 0 </span><span style="font-size: 18px; user-select: auto;">and do it in <strong style="user-select: auto;">constant space complexity</strong>.</span></p>
+<p style="user-select: auto;"><span style="font-size: 18px; user-select: auto;"><strong style="user-select: auto;">Examples:</strong></span></p>
+<pre style="user-select: auto;"><span style="font-size: 18px; user-select: auto;"><strong style="font-size: 18px; user-select: auto;">Input: </strong><span style="font-size: 18px; user-select: auto;">mat[][] = [[1, -1, 1],
+                [-1, 0, 1],
+                [1, -1, 1]]
+</span><strong style="font-size: 18px; user-select: auto;">Output:</strong><span style="font-size: 18px; user-select: auto;"> [[1, 0, 1],
+        [0, 0, 0],
+        [1, 0, 1]]
+</span><strong style="font-size: 18px; user-select: auto;">Explanation:</strong><span style="font-size: 18px; user-select: auto;"> </span></span><span style="font-size: 18px; user-select: auto;">mat[1][1] = 0, so all elements in row 1 and column 1 are updated to zeroes.</span></pre>
+<pre style="user-select: auto;"><span style="font-size: 18px; user-select: auto;"><strong style="font-size: 18px; user-select: auto;">Input: </strong><span style="font-size: 18px; user-select: auto;">mat[][] = [[0, 1, 2, 0],
+                [3, 4, 5, 2],
+                [1, 3, 1, 5]]
+</span><strong style="font-size: 18px; user-select: auto;">Output:</strong><span style="font-size: 18px; user-select: auto;"> [[0, 0, 0, 0],
+        [0, 4, 5, 0],
+        [0, 3, 1, 0]]
+</span><strong style="font-size: 18px; user-select: auto;">Explanation:</strong><span style="font-size: 18px; user-select: auto;"> </span></span><span style="font-size: 18px; user-select: auto;">mat[0][0] and mat[0][3] are 0s, so all elements in row 0, column 0 and column 3 are updated to zeroes.</span></pre>
+<p style="user-select: auto;"><span style="font-size: 18px; user-select: auto;"><strong style="user-select: auto;">Constraints:</strong><br style="user-select: auto;">1 ≤ n, </span><span style="font-size: 18px; user-select: auto;">m</span><span style="font-size: 18px; user-select: auto;"> ≤ 500</span><sup style="user-select: auto;"><br style="user-select: auto;"></sup><span style="font-size: 18px; user-select: auto;">- 2<sup style="user-select: auto;">31</sup> ≤ mat[i][j] ≤ 2<sup style="user-select: auto;">31</sup> - 1</span></p></div>
